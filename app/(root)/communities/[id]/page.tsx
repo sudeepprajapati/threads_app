@@ -66,12 +66,13 @@ async function Page({ params }: { params: { id: string } }) {
                             ))}
                         </section>
                     </TabsContent>
-                    <TabsContent value="requests" className="w-full text-light-1">
-                        <ThreadsTab
+                    <TabsContent value="requests" className="w-full text-light-2 ">
+                        {/* <ThreadsTab
                             currentUserId={user.id}
                             accountId={communityDetails._id}
                             accountType="Community"
-                        />
+                        /> */}
+                        <h1 className="lg:text-heading3-semibold text-center mt-44 text-heading2-semibold lg:mt-36">No requests to join the community at the moment. Check back later!</h1>
                     </TabsContent>
                 </Tabs>
             </div>
